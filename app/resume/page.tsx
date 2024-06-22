@@ -184,8 +184,8 @@ const Resume = () => {
                                                     <span className="text-accent">{item.duration}</span>
                                                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                                                     <div className="flex items-center gap-3">
-                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                                                        <p className="text-white/50">{item.institution}</p>
+                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent flex-shrink-0"></span>
+                                                        <p className="text-white/50 overflow-hidden text-ellipsis">{item.institution}</p>
                                                     </div>
                                                 </li>
                                             )
@@ -201,26 +201,14 @@ const Resume = () => {
                                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                                 </div>
                                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[30px]">
-                                    {skills.skillList.map((item, index) => {
-                                        return (
-                                            <li
-                                                key={index}
-                                            >
-                                                <TooltipProvider delayDuration={100}>
-                                                    <Tooltip>
-                                                        <TooltipTrigger className="w-full h-[150px] bg-[#232329]
-                                                        rounded-xl flex justify-center items-center group">
-                                                            <div className="text-6xl group-hover:text-accent
-                                                            transition-all duration-300">{item.icon}</div>
-                                                        </TooltipTrigger>
-                                                        <TooltipContent>
-                                                            <p className="capitalize">{item.name}</p>
-                                                        </TooltipContent>
-                                                    </Tooltip>
-                                                </TooltipProvider>
-                                            </li>
-                                        )
-                                    })}
+                                    {skills.skillList.map((item, index) => (
+                                        <li key={index} className="flex flex-col items-center hover:text-accent">
+                                            <div className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center ">
+                                                <div className="text-6xl ">{item.icon}</div>
+                                            </div>
+                                            <p className="capitalize mt-2">{item.name}</p> {/* Текст под иконкой */}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </TabsContent>
