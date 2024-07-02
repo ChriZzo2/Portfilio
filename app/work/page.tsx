@@ -29,9 +29,9 @@ const projects: projectType[] = [
         category: "frontend",
         title: "project 1",
         description: "future",
-        stack: [{name: "Html 5"}, {name: "css 3"}, {name: "Javascript"}],
-        image: "/assets/work/photo.png",
-        live: "",
+        stack: [{name: "Next.js"}, {name: "Tailwind"}, {name: "Strapi"},{name: "Kinde"} ],
+        image: "/assets/work/work1.png",
+        live: "https://booking-ruby-nine.vercel.app/",
         github: ""
     },
     {
