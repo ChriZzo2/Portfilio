@@ -7,10 +7,10 @@ type Props = {
 }
 
 const social = [
-    {icon: <FaGithub/>, path: ""},
+    {icon: <FaGithub/>, path: "https://github.com/chrizzo2"},
     {icon: <FaLinkedinIn/>, path: ""},
-    {icon: <FaTelegram/>, path: ""},
-    {icon: <FaCode/>, path: ""},
+    {icon: <FaTelegram/>, path: "https://t.me/ostriakart"},
+    {icon: <FaCode/>, path: "https://www.codewars.com/users/ChriZzo2"},
 ]
 
 const Social = ({containerStyles, iconStyles}: Props) => {

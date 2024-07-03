@@ -42,7 +42,7 @@ const education = {
         {
             institution: "IT-INCUBATOR",
             degree: "Frontend Developer React JS",
-            duration: "2023"
+            duration: "2022"
         },
         {
             institution: "Glo Academy",
@@ -158,16 +158,16 @@ const Resume = () => {
             <div className="container mx-auto">
                 <Tabs defaultValue={"About me"} className="flex flex-col xl:flex-row gap-[60px]">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-                        <TabsTrigger value={'experience'}>Experience</TabsTrigger>
+                        {/*<TabsTrigger value={'experience'}>Experience</TabsTrigger>*/}
                         <TabsTrigger value={'education'}>Education</TabsTrigger>
                         <TabsTrigger value={'skills'}>Skills</TabsTrigger>
                         <TabsTrigger value={'about'}>About me</TabsTrigger>
                     </TabsList>
 
                     <div className="min-h-[70vh] w-full">
-                        <TabsContent value={'experience'} className="w-full">
-                            FUTURE
-                        </TabsContent>
+                        {/*<TabsContent value={'experience'} className="w-full">*/}
+                        {/*    FUTURE*/}
+                        {/*</TabsContent>*/}
                         <TabsContent value={'education'} className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{education.title}</h3>
