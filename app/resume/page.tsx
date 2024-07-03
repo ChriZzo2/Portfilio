@@ -45,8 +45,8 @@ const education = {
             duration: "2022"
         },
         {
-            institution: "Glo Academy",
-            degree: "Practical course Frontend Web Development HTML, CSS, and JavaScript",
+            institution: "Udemy",
+            degree: "Web-разработчик JavaScript / CSS / HTML",
             duration: "2020"
         },
         {
