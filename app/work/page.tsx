@@ -27,22 +27,22 @@ const projects: projectType[] = [
     {
         num: "01",
         category: "frontend",
-        title: "project 1",
-        description: "future",
+        title: "Booky",
+        description: "Платформа для бронирования номеров в отеле, разработанная с использованием Next.js и Tailwind CSS для создания быстрого и адаптивного интерфейса. Разработал функционал бронирования и интегрировал Strapi для управления контентом и бэкенд-логикой.",
         stack: [{name: "Next.js"}, {name: "Tailwind"}, {name: "Strapi"},{name: "Kinde"} ],
         image: "/assets/work/work1.png",
         live: "https://booking-ruby-nine.vercel.app/",
-        github: ""
+        github: "https://github.com/ChriZzo2/booking"
     },
     {
         num: "02",
         category: "frontend",
-        title: "project 2",
-        description: "future",
-        stack: [{name: "Js"}, {name: "react"}, {name: "query"}],
-        image: "/assets/work/photo.png",
-        live: "",
-        github: ""
+        title: "CheckFlow",
+        description: "Проект предоставляет удобный интерфейс для создания, редактирования, удаления и отображения задач и списков делw",
+        stack: [{name: "React.js"}, {name: "Material UI"}, {name: "RTK"}, {name: "Axios"}],
+        image: "/assets/work/work2.png",
+        live: "https://checkflow-weld.vercel.app/login",
+        github: "https://github.com/ChriZzo2/CheckFlow"
     }
 ]
 const Work = () => {
@@ -122,7 +122,7 @@ const Work = () => {
                                         <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                                             <div className="absolute top-0 bottom-0 w-full h-full bg-black/20 z-10"></div>
                                             <div className="relative w-full h-full">
-                                                <Image src={project.image} alt={''} fill className="object-cover "/>
+                                                <Image src={project.image} alt={''} fill className="object-contain "/>
                                             </div>
                                         </div>
                                     </SwiperSlide>
