@@ -38,7 +38,7 @@ const projects: projectType[] = [
         num: "02",
         category: "frontend",
         title: "CheckFlow",
-        description: "Проект предоставляет удобный интерфейс для создания, редактирования, удаления и отображения задач и списков делw",
+        description: "Проект предоставляет удобный интерфейс для создания, редактирования, удаления и отображения задач и списков дел.",
         stack: [{name: "React.js"}, {name: "Material UI"}, {name: "RTK"}, {name: "Axios"}],
         image: "/assets/work/work2.png",
         live: "https://checkflow-weld.vercel.app/login",
