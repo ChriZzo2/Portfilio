@@ -17,7 +17,7 @@ const about = {
         },
         {
             fieldName: "Experience ",
-            fieldValue: "1+ Year"
+            fieldValue: "2+ Year"
         },
         {
             fieldName: "Email",
