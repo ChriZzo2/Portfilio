@@ -27,6 +27,16 @@ const projects: projectType[] = [
     {
         num: "01",
         category: "frontend",
+        title: "TRIPTILE",
+        description: "Разработал платформа-конструктор туров, которая позволяет пользователям создавать свои собственные путешествия. Благодаря интуитивно понятному интерфейсу пользователи могут выбрать свое направление, разработать персонализированный маршрут и настроить каждый аспект своего путешествия, включая бронирование отелей, организацию транспорта и выбор экскурсий.",
+        stack: [{name: "Next.js"}, {name: "Styled-components"}, {name: "Emotion"},{name: "Node.js"} ],
+        image: "/assets/work/work3.png",
+        live: "https://triptile.com/",
+        github: ""
+    },
+    {
+        num: "02",
+        category: "frontend",
         title: "Booky",
         description: "Платформа для бронирования номеров в отеле, разработанная с использованием Next.js и Tailwind CSS для создания быстрого и адаптивного интерфейса. Разработал функционал бронирования и интегрировал Strapi для управления контентом и бэкенд-логикой.",
         stack: [{name: "Next.js"}, {name: "Tailwind"}, {name: "Strapi"},{name: "Kinde"} ],
@@ -35,7 +45,7 @@ const projects: projectType[] = [
         github: "https://github.com/ChriZzo2/booking"
     },
     {
-        num: "02",
+        num: "03",
         category: "frontend",
         title: "CheckFlow",
         description: "Проект предоставляет удобный интерфейс для создания, редактирования, удаления и отображения задач и списков дел.",

@@ -3,9 +3,36 @@
 import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaGit} from "react-icons/fa"
 import {SiTailwindcss, SiNextdotjs, SiRedux, SiStorybook, SiRadixui, SiReacthookform, SiReactquery, SiTypescript, SiSass, SiStyledcomponents, SiSwagger, SiAntdesign, SiAxios} from "react-icons/si"
 
+const experience = {
+    title: "My experience",
+    items: [
+        {
+            work: "GEMUNION",
+            degree: "Frontend Developer",
+            description: 'Developed a tour constructor platform that empowers users to curate\n' +
+                'their travel experiences. With an intuitive interface, users can select\n' +
+                'their destination, devise a personalized itinerary, and customize\n' +
+                'every facet of their journey, including hotel bookings, transport\n' +
+                'arrangements, and excursion selections.',
+            duration: "2023"
+        },
+        {
+            work: "IT-INCUBATOR",
+            degree: "Frontend Developer",
+            description: 'Development and maintenance of the company\'s internal applications. As a frontend developer, I actively participated in the development and improvement of user interfaces. My work included creating responsive and performant components, integrating with backend services via API, and optimizing the user experience to achieve maximum efficiency and customer satisfaction.',
+            duration: "2022"
+        },
+        {
+            work: "Energy sales",
+            degree: "Engineer",
+            description: 'Conducting diagnostics of the condition of power equipment, identifying faults, and troubleshooting. Participating in the installation and commissioning of new power equipment, bringing it into operation. Monitoring compliance with technical operation rules, safety instructions. Maintaining passports, logbooks of equipment operation, and reports. Analyzing data on energy resource consumption, identifying areas of energy loss.',
+            duration: "2019"
+        }],
+}
+
 const about = {
     title: "About me",
-    description: "Hello! My name is Artsiom. Frontend developer with 1+ years of experience in Single Page Application development using TypeScript, JavaScript, React, Redux, Redux-toolkit, RTK Query.",
+    description: "Hello! My name is Artsiom. Frontend developer with 3+ years of experience in Single Page Application development using TypeScript, JavaScript, React, Redux, Redux-toolkit, RTK Query.",
     info: [
         {
             fieldName: "name",
@@ -143,6 +170,7 @@ const skills = {
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
 import {ScrollArea} from "@/components/ui/scroll-area";
 import {motion} from "framer-motion";
+import Link from "next/link";
 
 
 const Resume = () => {
@@ -158,16 +186,39 @@ const Resume = () => {
             <div className="container mx-auto">
                 <Tabs defaultValue={"About me"} className="flex flex-col xl:flex-row gap-[60px]">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-                        {/*<TabsTrigger value={'experience'}>Experience</TabsTrigger>*/}
+                        <TabsTrigger value={'experience'}>Experience</TabsTrigger>
                         <TabsTrigger value={'education'}>Education</TabsTrigger>
                         <TabsTrigger value={'skills'}>Skills</TabsTrigger>
                         <TabsTrigger value={'about'}>About me</TabsTrigger>
                     </TabsList>
 
                     <div className="min-h-[70vh] w-full">
-                        {/*<TabsContent value={'experience'} className="w-full">*/}
-                        {/*    FUTURE*/}
-                        {/*</TabsContent>*/}
+                        <TabsContent value={'experience'} className="w-full">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                                <ul>
+                                    <ScrollArea className="h-[400px]">
+                                        {experience.items.map((item, index) => {
+                                            return (
+                                                <li
+                                                    key={index}
+                                                    className="bg-[#232329] h-full py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                                                >
+                                                    <span className="text-accent">{item.duration}</span>
+                                                    <h3 className="text-xl max-w-[260px] min-h-[30px] text-center lg:text-left">{item.degree}</h3>
+                                                    <span className="text-xs max-w-[760px] h-full text-center lg:text-left ">{item.description}</span>
+                                                    {item.work === "GEMUNION" && <Link href={'https://triptile.com/'}>triptile.com</Link>}
+                                                    <div className="flex items-center gap-3">
+                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent flex-shrink-0"></span>
+                                                        <p className="text-white/50 overflow-hidden text-ellipsis">{item.work}</p>
+                                                    </div>
+                                                </li>
+                                            )
+                                        })}
+                                    </ScrollArea>
+                                </ul>
+                            </div>
+                        </TabsContent>
                         <TabsContent value={'education'} className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{education.title}</h3>
