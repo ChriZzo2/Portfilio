@@ -17,7 +17,7 @@ const Home = () => {
                         <h1 className="h1 mb-6">
                             Hello I`m <br/> <span className="text-accent">Artsiom Astrovsky</span>
                         </h1>
-                        <p className="max-m-[500px] mb-9 text-white/500">Frontend developer with 3+ years of experience
+                        <p className="max-m-[500px] mb-9 text-white/500">Frontend developer with 2+ years of experience
                             in Single Page Application development using
                             TypeScript, JavaScript, React, Redux, Redux-toolkit, RTK Query, Next.js.</p>
                         <div className="flex flex-col xl:flex-row items-center gap-8">

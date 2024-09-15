@@ -32,7 +32,7 @@ const experience = {
 
 const about = {
     title: "About me",
-    description: "Hello! My name is Artsiom. Frontend developer with 3+ years of experience in Single Page Application development using TypeScript, JavaScript, React, Redux, Redux-toolkit, RTK Query.",
+    description: "Hello! My name is Artsiom. Frontend developer with 2+ years of experience in Single Page Application development using TypeScript, JavaScript, React, Redux, Redux-toolkit, RTK Query.",
     info: [
         {
             fieldName: "name",
@@ -44,7 +44,7 @@ const about = {
         },
         {
             fieldName: "Experience ",
-            fieldValue: "3+ Year"
+            fieldValue: "2+ Year"
         },
         {
             fieldName: "Email",
